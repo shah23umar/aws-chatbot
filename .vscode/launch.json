@@ -1,0 +1,19 @@
+{
+  "configurations": [
+    {
+      "type": "debugpy",
+      "request": "launch",
+      "name": "Launch Bedrock.py",
+      "program": "${workspaceFolder}/${input:programName}",
+      "console": "integratedTerminal"
+    }
+  ],
+  "inputs": [
+    {
+      "type": "pickString",
+      "id": "programName",
+      "description": "Select the Python file to launch",
+      "options": ["__init__.py", "Bedrock.py"]
+    }
+  ]
+}
