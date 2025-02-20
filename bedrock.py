@@ -2,14 +2,14 @@
 import boto3
 import json
 
-session = boto3.Session(profile_name="default", region_name="us-west-2")
-bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', region_name='us-west-2')
+session = boto3.Session(profile_name="default", region_name="us-east-1")
+bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', region_name='us-east-1')
 
 def call_bedrock_service(question):
 
     user_question = question
-    knowledge_base_id = 'UAXEXQAF5G'
-    model_arn = 'arn:aws:bedrock:us-west-2::foundation-model/anthropic.claude-3-5-sonnet-20240620-v1:0'
+    knowledge_base_id = 'EK9VRIPDQL'
+    model_arn = 'arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-5-sonnet-20240620-v1:0'
  
     try:
         response = bedrock_agent_runtime.retrieve_and_generate(

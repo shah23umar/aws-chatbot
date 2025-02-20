@@ -8,17 +8,17 @@ class myEvent:
     question = "XXXXXXXX"
 
 
-st.title("NIST AI Agent :sunglasses:")
-st.markdown(''':grey[Ask me any thing about NIST Cybersecurity Framework - ]''')
-st.markdown(''':grey[What are the subcategories of the CSF 2.0 Core?]''')
-st.markdown(''':grey[What are supply chain risks? ]''')
-st.markdown(''':grey[what is GV.OC-04?]''')
+st.title("NCCN AI Agent :sunglasses:")
+st.markdown(''':grey[Ask me any thing about NCCN Guidelines for Soft Tissues Sarcoma - ]''')
+st.markdown(''':grey[What is soft tissue sarcoma?]''')
+st.markdown(''':grey[What is liposarcomas? ]''')
+st.markdown(''':grey[what is core needle biopsy?]''')
 
 show_gif = False
 with st.form(key="question_form", clear_on_submit=True):
     prompt = st.text_input("", "")
     button = st.form_submit_button("Submit")
-    agent_message = "NIST AI Agent searching millions of pages to find the answer for you. Please wait for a moment...:sunflower:  "
+    agent_message = "NCCN AI Agent searching the pages to find the answer for you. Please wait for a moment...:sunflower:  "
     agent_response = ""
     
     question_text = st.empty()
