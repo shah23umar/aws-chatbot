@@ -8,7 +8,7 @@ bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', reg
 def call_bedrock_service(question):
 
     user_question = question
-    knowledge_base_id = 'EK9VRIPDQL'
+    knowledge_base_id = 'N1E8EZLVHB'
     model_arn = 'arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-5-sonnet-20240620-v1:0'
  
     try:
