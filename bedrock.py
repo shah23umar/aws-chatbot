@@ -1,14 +1,18 @@
+import sys
+print(sys.path)
+sys.path.append('/usr/local/lib/python3.7/site-packages')
+print(sys.path)
 
 import boto3
 import json
 
-session = boto3.Session(profile_name="default", region_name="us-east-1")
+session = boto3.Session(region_name="us-east-1")
 bedrock_agent_runtime = session.client(service_name='bedrock-agent-runtime', region_name='us-east-1')
 
 def call_bedrock_service(question):
 
     user_question = question
-    knowledge_base_id = 'N1E8EZLVHB'
+    knowledge_base_id = 'DDDUORG2BQ'
     model_arn = 'arn:aws:bedrock:us-east-1::foundation-model/anthropic.claude-3-5-sonnet-20240620-v1:0'
  
     try:
